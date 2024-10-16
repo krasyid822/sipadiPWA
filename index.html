@@ -51,6 +51,17 @@
             });
         }
 
+        function checkIfPWAInstalled() {
+            const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+            if (isStandalone) {
+                window.location.href = 'https://sipadi-eng.polmed.ac.id/my/';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            checkIfPWAInstalled();
+        });
+
         /* document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'https://sipadi-eng.polmed.ac.id/my/';
         }); */
