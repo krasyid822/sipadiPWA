@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sipadi Teknik</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/png" sizes="32x32" href="rsc\png\icon.png">
+    <link rel="icon" type="image/png" href="rsc\png\icon.png">
     <base href="base.html">
     <meta name="theme-color" content="#317EFB"/>
     <script>
@@ -46,7 +46,7 @@
                     }
                     deferredPrompt = null;
                     // Redirect to the URL after the user responds to the prompt
-                    window.location.href = 'https://sipadi-eng.polmed.ac.id/my/';
+                    window.location.href = 'https://sipadi-teknik.polmed.ac.id/my/';
                 });
             });
         }
@@ -54,7 +54,7 @@
         function checkIfPWAInstalled() {
             const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
             if (isStandalone) {
-                window.location.href = 'https://sipadi-eng.polmed.ac.id/my/';
+                window.location.href = 'https://sipadi-teknik.polmed.ac.id/my/';
             }
         }
 
@@ -68,6 +68,7 @@
     </script>
 </head>
 <body>
-  Click <a href="https://sipadi-eng.polmed.ac.id/my/">here</a> if not redirected.
+    <!-- old domain -->
+  <!-- Click <a href="https://sipadi-eng.polmed.ac.id/my/">here</a> if not redirected. -->
 </body>
 </html>
